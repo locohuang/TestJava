@@ -11,13 +11,15 @@ public class Box {
         this.height = height;
         this.depth = depth;
     }
+    public Box(double width,double height){
+        this.width = width;
+        this.height = height;
+    }
     double volumn(){
         return width*height*depth;
     }
-
-    void setDim(double w,double h,double d){
-        width = w;
-        height = h;
-        depth = d;
+    Box newBox(){
+        Box b = new Box(1,2,3);
+        return b;
     }
 }
