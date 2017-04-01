@@ -18,6 +18,7 @@ public class Box {
     double volumn(){
         return width*height*depth;
     }
+
     Box newBox(){
         Box b = new Box(1,2,3);
         return b;
