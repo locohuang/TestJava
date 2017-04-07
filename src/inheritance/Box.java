@@ -4,9 +4,10 @@ package inheritance;
  * Created by Administrator on 2017-3-17.
  */
 public class Box{
-    double width;
-    double height;
-    double depth;
+    private double width;
+    private double height;
+    private double depth;
+    int color;
     //构造方法
     public Box(double width, double height, double depth){
         this.width = width;
