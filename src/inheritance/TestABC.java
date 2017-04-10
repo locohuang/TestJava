@@ -5,6 +5,16 @@ package inheritance;
  */
 public class TestABC {
     public static void main(String[] args) {
-        C c = new C();
+        A a = new A();
+        B b =new B();
+        C c =new C();
+        //子类对象可以赋值给父类变量
+        A ref ;
+        ref = a;
+        ref.callMe();
+        ref = b;
+        ref.callMe();
+        ref = c;
+        ref.callMe();
     }
 }

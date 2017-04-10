@@ -5,6 +5,13 @@ package inheritance;
  */
 public class B extends A{
     public B(){
-        System.out.println("B构造方法");
+
+    }
+    public void show(){
+        super.show();
+        System.out.println("执行B里面的show");
+    }
+    public void callMe(){
+        System.out.println("执行B里面的callMe");
     }
 }

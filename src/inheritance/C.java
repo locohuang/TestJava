@@ -5,6 +5,22 @@ package inheritance;
  */
 public class C extends B{
     public C(){
-        System.out.println("C构造方法");
+
+    }
+    //方法的重载
+    public void f1(){
+
+    }
+    public void f1(int n){
+
+    }
+    public void f1(int m,int n){
+
+    }
+    public void f1(double m,int n){
+
+    }
+    public void callMe(){
+        System.out.println("执行C里面的callMe");
     }
 }

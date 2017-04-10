@@ -5,6 +5,12 @@ package inheritance;
  */
 public class A {
     public A(){
-        System.out.println("A构造方法");
+
+    }
+    public void show(){
+        System.out.println("执行A里面的show");
+    }
+    public void callMe(){
+        System.out.println("执行A里面的callMe");
     }
 }
