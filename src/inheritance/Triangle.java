@@ -10,4 +10,9 @@ public class Triangle extends Figure{
     public double area(){
         return d1*d2/2;
     }
+
+    @Override
+    public void f1() {
+
+    }
 }

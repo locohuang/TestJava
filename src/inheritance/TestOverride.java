@@ -5,7 +5,7 @@ package inheritance;
  */
 public class TestOverride {
     public static void main(String[] args) {
-        Figure f = new Figure(1,2);
+        Figure f;
         Rectangle r = new Rectangle(3,4);
         Triangle t = new Triangle(4,5);
         /*System.out.println(f.area());
