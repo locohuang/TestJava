@@ -1,5 +1,9 @@
 package string;
 
+import sun.misc.Cleaner;
+
+import java.util.*;
+
 /**
  * Created by Administrator on 2017-5-12.
  */
@@ -61,5 +65,42 @@ public class TestString {
         System.out.println(search.substring(2,6));
         //有文件名：abc.abf.doc ，给他重命名，名字是：xxxx.doc   xxxx是随机数
         //辅助：indexOf   substring    split  (Random,系统时间，UUID)
+        System.out.println("__________________________________________________________");
+        String fileName = new String("hah.abcd.mp4");
+        //String ex = fileName.substring(3);
+        //String ex = fileName.substring(fileName.indexOf('.'));//适合文件名为：abcd.mp4，不适合：hah.abcd.mp4
+        String ex = fileName.substring(fileName.lastIndexOf('.'));//适合文件名为：abcd.mp4，hah.abcd.mp4
+        /*Random random = new Random();
+        String newFileName = String.valueOf(Calendar.getInstance().getTimeInMillis())+random.nextInt(10000)+ex;*/
+        String uuid = UUID.randomUUID().toString();
+        String newFileName = uuid+ex;
+        System.out.println(newFileName);
+
+        System.out.println("__________________________________________________________");
+        //练习：有字符串数组，将字符串数组按字母表顺序从小到大排序
+        String[]names = new String[]{"zhang","li","wang","sun","Zhao","haung"};
+        System.out.println("排序前：");
+        for(String s : names){
+            System.out.print(s+"    ");
+        }
+        System.out.println();
+        //Arrays ;Collections
+        //Arrays.sort(names);//按字符串大小从小到大排序---改变了数组元素的位置
+        //Arrays.sort(names, Collections.reverseOrder());//按降序方式进行排序
+        Arrays.sort(names,Collections.reverseOrder(String.CASE_INSENSITIVE_ORDER));
+        System.out.println("排序后：");
+        for(String s : names){
+            System.out.print(s+"    ");
+        }
+        System.out.println();
+
+
+
+
+
+
+
+
+
     }
 }
