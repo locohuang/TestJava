@@ -4,12 +4,27 @@ package collection;
  * Created by Administrator on 2017-5-23.
  */
 public class Student {
+    private String no;
     private String name;
     private int age;
 
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public Student(String no, String name, int age) {
+        this.no = no;
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getNo() {
+        return no;
+    }
+
+    public void setNo(String no) {
+        this.no = no;
     }
 
     public String getName() {
